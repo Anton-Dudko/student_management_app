@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="433.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.StudentWindowController">
+   <children>
+      <TableView fx:id="usersTable" layoutX="69.0" layoutY="79.0" prefHeight="291.0" prefWidth="551.0">
+         <columns>
+            <TableColumn fx:id="surnameTab" prefWidth="101.60003662109375" text="Фамилия" />
+            <TableColumn fx:id="nameTab" minWidth="0.0" prefWidth="109.59991455078125" text="Имя" />
+            <TableColumn fx:id="groupNumTab" prefWidth="112.0" text="Номер группы" />
+            <TableColumn fx:id="subjectTab" prefWidth="112.0" text="Предмет" />
+            <TableColumn fx:id="markTab" prefWidth="112.0" text="Оценка" />
+         </columns>
+      </TableView>
+      <TextField fx:id="surnameField" layoutX="36.0" layoutY="24.0" promptText="Фамилия" />
+      <TextField fx:id="groupField" layoutX="211.0" layoutY="24.0" promptText="Номер группы" />
+      <Button fx:id="findBtn" layoutX="415.0" layoutY="24.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" text="Найти" />
+      <Button fx:id="exitButton" layoutX="27.0" layoutY="392.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" text="Назад" />
+   </children>
+</AnchorPane>

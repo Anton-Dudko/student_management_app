@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ClientWindowController">
+   <children>
+      <Button fx:id="exitBtn" layoutX="20.0" layoutY="451.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" text="Выйти" />
+      <Label layoutX="266.0" text="Журнал оценок">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="addMarkBtn" layoutX="17.0" layoutY="100.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="138.0" text="Поставить оценку">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TableView fx:id="usersTable" layoutX="163.0" layoutY="100.0" prefHeight="296.0" prefWidth="606.0">
+         <columns>
+            <TableColumn fx:id="idTab" prefWidth="29.599976539611816" text="ID" />
+            <TableColumn fx:id="nameTab" prefWidth="122.4000244140625" text="Имя" />
+            <TableColumn fx:id="surnameTab" minWidth="0.0" prefWidth="112.79998779296875" text="Фамилия" />
+            <TableColumn fx:id="groupTab" prefWidth="110.39996337890625" text="Номер группы" />
+            <TableColumn fx:id="subTab" prefWidth="122.4000244140625" text="Предмет" />
+            <TableColumn fx:id="markTab" prefWidth="103.199951171875" text="Оценка" />
+         </columns>
+      </TableView>
+      <TextField fx:id="idField" layoutX="163.0" layoutY="408.0" prefHeight="26.0" prefWidth="31.0" />
+      <TextField fx:id="nameField" layoutX="194.0" layoutY="408.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="surnameField" layoutX="316.0" layoutY="408.0" prefHeight="26.0" prefWidth="114.0" />
+      <TextField fx:id="groupField" layoutX="430.0" layoutY="408.0" prefHeight="26.0" prefWidth="108.0" />
+      <TextField fx:id="subField" layoutX="538.0" layoutY="408.0" prefHeight="26.0" prefWidth="122.0" />
+      <TextField fx:id="markField" layoutX="660.0" layoutY="408.0" prefHeight="26.0" prefWidth="108.0" />
+      <Button fx:id="chooseButton" layoutX="194.0" layoutY="451.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Выбрать" />
+      <Button fx:id="deleteButton" layoutX="397.0" layoutY="451.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Удалить" />
+      <Button fx:id="redactionButton" layoutX="593.0" layoutY="451.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Редактировать" />
+      <Button fx:id="studBtn" layoutX="17.0" layoutY="149.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="138.0" text="Студенты">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.FacultiesController">
+   <children>
+      <TableView fx:id="fucTable" layoutX="66.0" layoutY="34.0" prefHeight="210.0" prefWidth="186.0">
+         <columns>
+            <TableColumn fx:id="faclTab" prefWidth="183.20001220703125" text="Факультеты" />
+         </columns>
+      </TableView>
+      <Button fx:id="exitButton" layoutX="236.0" layoutY="359.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" text="Назад" />
+      <TableView fx:id="specTable" layoutX="355.0" layoutY="34.0" prefHeight="210.0" prefWidth="186.0">
+         <columns>
+            <TableColumn fx:id="specTab" prefWidth="183.20001220703125" text="Специальности" />
+         </columns>
+      </TableView>
+      <Button fx:id="addBtn" layoutX="355.0" layoutY="288.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="186.0" text="Добавить специальность" />
+      <TextField fx:id="facField" layoutX="355.0" layoutY="262.0" prefHeight="26.0" prefWidth="88.0" promptText="Факультет" />
+      <TextField fx:id="specField" layoutX="443.0" layoutY="262.0" prefHeight="26.0" prefWidth="99.0" promptText="Специальность" />
+      <TextField fx:id="findfacField" layoutX="66.0" layoutY="287.0" prefHeight="26.0" prefWidth="88.0" promptText="Факультет" />
+      <Button fx:id="findBtn" layoutX="154.0" layoutY="287.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" text="Найти" />
+   </children>
+</AnchorPane>
